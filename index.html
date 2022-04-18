@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Gallery</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        margin: center;
+        background-color: #000;
+      }
+      .col {
+        float: left;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">
+        <img src="img_lights.jpg" alt="" onclick="photo(this);">
+      </div>
+      <div class="col">
+        <img src="img_mountains.jpg" alt="" onclick="photo(this);">
+      </div>
+      <div class="col">
+        <img src="img_snow.jpg" alt="" onclick="photo(this);">
+      </div>
+      <div class="col">
+        <img src="img_nature.jpg" alt="" onclick="photo(this);">
+      </div>
+    </div>
+    <div class="container">
+      <img id="expand" style="width:50%">
+    </div>
+    <script type="text/javascript">
+      function photo(img) {
+        var expand = document.getElementById("expand");
+        expand.src = img.src;
+      }
+    </script>
+    <!--
+          ██     ██
+        ██        ██
+        ██      ██
+          ██    ██
+          ██      ██
+     ██////////////////██████
+     ██////////////////██||██
+     ██/Coffee by k0pa/██||██
+     ██////////////////██████
+      ██//////////////██
+    ████████████████████████
+    ██////////////////////██
+      ████████████████████
+    -->
+  </body>
+</html>
