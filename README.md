@@ -1,6 +1,6 @@
 # Photo Gallery
 
-Photo Gallery is website view, simple gallery view. 
+Photo Gallery is website with simple gallery view. 
 
 ## JavaScript code
 
